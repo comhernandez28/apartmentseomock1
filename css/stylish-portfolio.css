@@ -153,7 +153,11 @@ hr.small {
 
 /* Carousel */
 
-
+.full-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 
 /* Side Menu */
@@ -174,6 +178,13 @@ hr.small {
     background: rgba(0,0,0,0.7);
 
     border-bottom-right-radius: 1000px;
+}
+
+.icon-align {
+  padding: 13px 25px 0px 0px;
+}
+.icon-align-home {
+  padding: 13px 0px 0px 0px;
 }
 
 .sidebar-nav {
