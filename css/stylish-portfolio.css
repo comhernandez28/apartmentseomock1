@@ -34,6 +34,13 @@ header {
     color: white;
 }
 
+.text-center {
+  padding-top: 20px;
+    display: table-cell;
+    text-align: center;
+    color: white;
+}
+
 .text-vertical-center h1 {
     font-size: 4.5em;
     font-weight: 700;
@@ -101,6 +108,7 @@ hr.small {
   background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  position: fixed;
 }
 
 .bg-footer {
@@ -140,7 +148,7 @@ hr.small {
 
 .fade-in.show {
   opacity: 1;
-  width: 60%;
+  width: 45%;
 }
 
 
@@ -149,6 +157,13 @@ hr.small {
 .holder {
   opacity: 0;
   height: 100%;
+  overflow: scroll;
+}
+
+.continued {
+  background-color: rgba(0,0,0, 0.97)!important;
+  margin-top: -110%;
+  padding: 0px 10px;
 }
 
 /* Carousel */
@@ -270,6 +285,32 @@ hr.small {
     background-size: cover;
 }
 
+
+/* Gallery */
+
+.gal {
+
+
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+
+
+	}
+	.gal img{ width: 100%; padding: 7px 0;}
+@media (max-width: 500px) {
+
+		.gal {
+
+
+	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+
+
+	}
+
+	}
 
 
 /* About */
