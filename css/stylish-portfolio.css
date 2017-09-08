@@ -200,7 +200,10 @@ hr.small {
 }
 
 .carousel-caption h3 {
-  font-size: 4em;
+  font-size: 5em;
+  font-family: 'Khula', sans-serif;
+  text-shadow: 2px 2px 12px #000000;
+  font-weight: bold;
 }
 
 .home-menu {
@@ -293,6 +296,8 @@ hr.small {
     display: block;
     text-decoration: none;
     color: #999;
+    text-transform: uppercase;
+    font-size: 1.2em;
 }
 
 .sidebar-nav li a:hover {
