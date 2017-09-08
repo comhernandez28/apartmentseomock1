@@ -151,7 +151,7 @@ hr.small {
   float: right;
   width: 1px;
   opacity: 1;
-  transition: width 1.75s ease;
+  transition: width 1s ease;
 }
 
 .fade-in.show {
@@ -208,25 +208,23 @@ hr.small {
 
 /* Side Menu */
 
+.navbar {
+  display: none;
+}
+
 @media only screen and (max-width : 1200px) {
   #sidebar-wrapper {
-      margin-top: 90%;
-  }
-  #sidebar-wrapper.active {
-      left: 186px;
-      bottom: 0px;
-      width: 250px;
-      -webkit-transition: all .4s ease 0s;
-      -moz-transition: all .4s ease 0s;
-      -ms-transition: all .4s ease 0s;
-      -o-transition: all .4s ease 0s;
-      transition: all .4s ease 0s;
+      display: none;
   }
   .hide-mobile {
     display: none;
   }
   .icon-align {
     display: none;
+  }
+  .navbar {
+    margin-bottom: 0px;
+    display: block;
   }
 }
 
@@ -376,19 +374,16 @@ hr.small {
 
 	}
 
+@media only screen and (max-width : 1200px) {
+  .mobile-fix-photos {
+    margin-top: -135%;
+  }
+}
 
-/* Callout */
-
-.callout {
-    display: table;
-    width: 100%;
-    height: 400px;
-    color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+@media only screen and (max-width : 767px) {
+  .mobile-fix-photos {
+    margin-top: -175%;
+  }
 }
 
 
@@ -425,11 +420,13 @@ hr.small {
 
 .amenities-img {
   width: 600px;
+  margin-left: -20px;
 }
 
 @media only screen and (max-width : 1200px) {
   .amenities-img {
-    width: 300px;
+    width: 400px;
+    margin-left: -20px;
   }
 }
 
