@@ -200,3 +200,11 @@ $('.carousel').carousel({
         $('.float-label-control').floatLabels();
     });
 })(jQuery);
+
+
+//social
+$("#share").jsSocials({
+    showLabel: false,
+    showCount: "inside",
+    shares: ["twitter", "facebook", "googleplus", "linkedin"]
+});
